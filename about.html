@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(181, 181, 242);
+            color: white;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(3, 3, 79);
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(81, 81, 235);
+            font-size: 1.1rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0;
+            font-size: 2rem;
+
+        }
+
+        .firstSection>div {
+            width: 30%;
+
+        }
+
+        .leftSection {
+            font-size: 3rem;
+        }
+
+        .rightsection img {
+            width: 80%;
+            margin: 50px 0;
+        }
+
+        .purple {
+            color: rgb(32, 92, 38);
+        }
+
+        #element {
+            color: black
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Aarushi's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="intro.html">Home</li></a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li>Projects</li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <span id="element"></span>
+            
+        </section>
+
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Hello! I am Aarushi Rawal. I am currently an enthusiastic fresher pursuing Computer Engineering at Thapar Institute of Engineering and technology.','I graduated from Venkateshwar International School,Sec-10,Dwarka,New Delhi with several accolades including a chairman trophy for being second in the science stream with 96% and a principal award for being the subject topper in English. It was during learning Python in my school that I discovered my passion for technology.','As a fresher, I am eager to learn and explore new oppurtunities. Having just completed my first semester, I have dabbled a little in the domain of web development.I plan to pursue my interests further and thus I am continuing my exploration into web development further along with learning new coding languages.'],
+            typeSpeed: 27
+        });
+    </script>
+</body>
+
+</html>
